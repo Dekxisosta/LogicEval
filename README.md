@@ -45,7 +45,7 @@ See [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/
  * 
  * This ensures all actions are initialized and ready 
  * for use in the console application
-*/
+ */
 import dev.dekxi.logic.actions.ActionHandler;
 public class ActionRegistry {
     public void registerActions() {
