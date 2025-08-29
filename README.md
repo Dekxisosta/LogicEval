@@ -4,10 +4,8 @@ A console-based logic calculator
 
 ## Note from the Author
 The purpose of this project is for me to learn about modularity, coupling,
-OOP, file reading, javadoc, etc.
-
-I am aware how much of an overkill this is for a boolean logic evaluator
-of two variables
+OOP, file reading, javadoc, etc. I am aware how much of an overkill this is 
+for a boolean logic evaluator of merely two variables
 
 ## Description
 This is a console-based boolean logic evaluator with files separated according
@@ -15,11 +13,15 @@ to their responsibilities. You can add actions by adding your own functions
 {@link dev.dekxi.logic.actions.ActionHandler} and putting it in 
 {@link dev.dekxi.logic.actions.ActionRegistry}
 
-### Example
+### Sample code
 ```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, LogicCalc!");
+public class Action {
+    public void registerActions() {
+        /*
+        * Depending on where you want the action to be indexed,
+        * insert it in the menu
+        */
+        handler.showNumbers()
     }
 }
 ```
