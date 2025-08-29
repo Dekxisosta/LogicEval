@@ -13,7 +13,7 @@ to their responsibilities. You can add other console-based actions by adding an 
 [ActionHandler.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionHandler.java) and putting it in 
 the actionMap via [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionRegistry.java)
 
-### Sample code
+### ActionHandler Sample Code
 ```java
 /*
 *Handles returning of code functionality for program use
@@ -28,6 +28,9 @@ public class ActionHandler {
         );
     }
 }
+```
+### ActionRegistry Sample Code
+```java
 /*
 *Registers actions from handler
 * @What to write here???
