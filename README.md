@@ -2,11 +2,6 @@
 
 A console-based logic calculator
 
-## Note from the Author
-The purpose of this project is for me to learn about modularity, coupling,
-OOP, file reading, javadoc, etc. I am aware how much of an overkill this is 
-for a boolean logic evaluator of merely two variables
-
 ## Description
 This is a console-based boolean logic evaluator with files separated according
 to their responsibilities. You can add other console-based actions by adding an Action object in
@@ -15,9 +10,9 @@ the actionMap via [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/
 
 ### ActionHandler Sample Code
 ```java
-/*
+/**
 *Handles returning of code functionality for program use
-*@return Action object (String s, Runnable r)
+*@return new Action(String s, Runnable r)
 */
 public class ActionHandler {
     void yourFunction() {
@@ -31,17 +26,36 @@ public class ActionHandler {
 ```
 ### ActionRegistry Sample Code
 ```java
-/*
-*Registers actions from handler
-* @What to write here???
+/**
+ * Registers available actions by retrieving them from the ActionHandler
+ * and putting them into ActionMap. 
+ * 
+ * This ensures all actions are initialized and ready 
+ * for use in the console application
 */
+import dev.dekxi.logic.actions.ActionHandler;
 public class ActionRegistry {
     public void registerActions() {
-        handler.yourFunction()
+        //stores registed actions in an Action array for later indexing
+        Action[] = {
+            //other actions
+            handler.yourFunction()
+        }
+
+        //sets index for each action in actions
+		for(int i=0; i<actions.length;i++)
+			putAction(i+1,actions[i]);
+
+		//0 is a special placeholder for program termination
+		putAction(0, handler.promptProgramTermination());
     }
 }
 ```
 
 You can add or change code blocks in [ConsoleUI.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/ui/ConsoleUI.java) to 
 manipulate the formatting of console print-outs
+
+## Disclaimer
+LogicCalc is a practice project developed to experiment with software design principles.  
+While functional, the codebase may not reflect best practices for a production-ready tool.
 
