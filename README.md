@@ -9,18 +9,14 @@ for a boolean logic evaluator of merely two variables
 
 ## Description
 This is a console-based boolean logic evaluator with files separated according
-to their responsibilities. You can add actions by adding your own functions 
-{@link dev.dekxi.logic.actions.ActionHandler} and putting it in 
-{@link dev.dekxi.logic.actions.ActionRegistry}
+to their responsibilities. You can add other console-based actions by adding an Action object in
+[ActionHandler.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionHandler.java) and putting it in 
+the actionMap via [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionRegistry.java)
 
 ### Sample code
 ```java
 public class Action {
     public void registerActions() {
-        /*
-        * Depending on where you want the action to be indexed,
-        * insert it in the menu
-        */
         handler.showNumbers()
     }
 }
