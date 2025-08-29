@@ -11,9 +11,14 @@ the actionMap via [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/
 ### ActionHandler Sample Code
 ```java
 /**
-*Handles returning of code functionality for program use
-*@return new Action(String s, Runnable r)
-*/
+ * Creates and returns a new Action to be registered in the program.
+ *
+ * Each Action consists of:
+ * - a String label, which is the name displayed in the console
+ * - a Runnable, which is the code executed when the action is triggered
+ *
+ * @return a new Action object containing the action's name and behavior
+ */
 public class ActionHandler {
     void yourFunction() {
         return new Action("ActionName",
