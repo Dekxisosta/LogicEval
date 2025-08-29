@@ -15,21 +15,30 @@ the actionMap via [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/
 
 ### Sample code
 ```java
-public class Action {
+/*
+*Handles returning of code functionality for program use
+*@return Action object (String s, Runnable r)
+*/
+public class ActionHandler {
+    void yourFunction() {
+        return new Action("ActionName",
+            ()-> {
+                //your function's code
+            }
+        );
+    }
+}
+/*
+*Registers actions from handler
+* @What to write here???
+*/
+public class ActionRegistry {
     public void registerActions() {
-        handler.showNumbers()
+        handler.yourFunction()
     }
 }
 ```
 
-You can add or change code blocks in {@link dev.dekxi.logic.io.ConsoleUI} to 
-manipulate the formatting the console print-outs
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, LogicCalc!");
-    }
-}
-```
+You can add or change code blocks in [ConsoleUI.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/ui/ConsoleUI.java) to 
+manipulate the formatting of console print-outs
 
