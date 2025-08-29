@@ -2,6 +2,12 @@
 
 A console-based logic calculator
 
+## Table of Contents
+- [Description](#description)
+- [ActionHandler Sample Code](#actionhandler-sample-code)
+- [ActionRegistry Sample Code](#actionregistry-sample-code)
+- [Disclaimer](#disclaimer)
+
 ## Description
 This is a console-based boolean logic evaluator with files separated according
 to their responsibilities. You can add other console-based actions by adding an Action object in
