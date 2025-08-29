@@ -14,8 +14,8 @@ to their responsibilities. You can add other console-based actions by adding an 
 [ActionHandler.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionHandler.java) and putting it in 
 the actionMap via [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionRegistry.java)
 
-### [ActionHandler Sample Code](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionHandler.java)
 ### ActionHandler Sample Code
+See [ActionHandler.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionHandler.java) for more details
 ```java
 /**
  * Creates and returns a new Action to be registered in the program.
@@ -37,6 +37,7 @@ public class ActionHandler {
 }
 ```
 ### ActionRegistry Sample Code
+See [ActionRegistry.java](https://github.com/Dekxisosta/LogicEval/blob/main/src/dev/dekxi/logic/actions/ActionRegistry.java) for more details
 ```java
 /**
  * Registers available actions by retrieving them from the ActionHandler
