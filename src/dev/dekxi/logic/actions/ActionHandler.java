@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.actions;
+package dev.dekxi.logic.actions;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,8 +32,8 @@ class ActionHandler{
 	 * DISPLAY CURRENT DATA ACTION
 	 * =============*/
 	Action showTruthValues() {
-		return new Action("SHOW TRUTH VALUES OF P AND Q", 
-				()-> printTruthValues()
+		return new Action("SHOW TRUTH VALUES OF P AND Q",
+                this::printTruthValues
 		);
 	}
 	

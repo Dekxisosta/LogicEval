@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.input;
+package dev.dekxi.logic.input;
 
 import java.io.BufferedReader;
 import java.io.IOException;

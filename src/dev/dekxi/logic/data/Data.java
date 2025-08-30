@@ -1,6 +1,6 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.data;
+package dev.dekxi.logic.data;
 
-import dev.dekxi.logic.app.src.dev.dekxi.logic.model.TruthValue;
+import dev.dekxi.logic.model.TruthValue;
 
 public class Data{
 	static Data INSTANCE = new Data();

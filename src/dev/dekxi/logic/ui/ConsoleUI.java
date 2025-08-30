@@ -1,9 +1,9 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.ui;
+package dev.dekxi.logic.ui;
 
 import java.io.IOException;
 
-import dev.dekxi.logic.app.src.dev.dekxi.logic.input.ConsoleInput;
-import dev.dekxi.logic.app.src.dev.dekxi.logic.input.FileParser;
+import dev.dekxi.logic.input.ConsoleInput;
+import dev.dekxi.logic.input.FileParser;
 
 public class ConsoleUI{
 	ConsoleInput input = new ConsoleInput();

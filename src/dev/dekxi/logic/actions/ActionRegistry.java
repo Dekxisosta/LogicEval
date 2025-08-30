@@ -1,10 +1,11 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.actions;
+package dev.dekxi.logic.actions;
 
+import dev.dekxi.logic.model.ActionMap;
 import dev.dekxi.logic.model.Action;
 
 public class ActionRegistry{
 	private ActionHandler handler = new ActionHandler();
-	public ActionMap map = ActionMap.getInstance();
+	public ActionMap map = new ActionMap();
 	/*=================
 	 * REGISTERING OF ACTIONS
 	 * =============*/

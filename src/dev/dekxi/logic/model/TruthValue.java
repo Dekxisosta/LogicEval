@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.model;
+package dev.dekxi.logic.model;
 
 public class TruthValue{
 	/*=================

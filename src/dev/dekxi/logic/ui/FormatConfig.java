@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.ui;
+package dev.dekxi.logic.ui;
 
 enum FormatConfig {
 	//must be one character strings to avoid weird formatting issues

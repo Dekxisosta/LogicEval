@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.input;
+package dev.dekxi.logic.input;
 
 final class ConsoleInputValidator{
 	private DataTypeParser dataTypeParser = new DataTypeParser();

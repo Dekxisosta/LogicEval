@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.ui;
+package dev.dekxi.logic.ui;
 
 enum ConsoleTag {
     INFO("[INFO]"),

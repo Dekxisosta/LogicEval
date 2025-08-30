@@ -1,4 +1,4 @@
-package dev.dekxi.logic.app.src.dev.dekxi.logic.actions;
+package dev.dekxi.logic.actions;
 
 class Logic{
 	/*=================
