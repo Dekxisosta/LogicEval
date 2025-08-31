@@ -87,7 +87,7 @@ public class ConsoleUI{
 		int size = labels.length;
 		
 		//print top border
-		printDoubleBorder(FormatConfig.HORIZONTAL_OUTER, FormatConfig.HORIZONTAL_INNER, tableSize);
+		printDoubleBorder(Border.HORIZONTAL_OUTER, Border.HORIZONTAL_INNER, tableSize);
 		
 		//print header
 		printRow(labels);
@@ -101,18 +101,18 @@ public class ConsoleUI{
 		printRow(resultStrings);
 		
 		//print bottom border
-		printDoubleBorder(FormatConfig.HORIZONTAL_INNER, FormatConfig.HORIZONTAL_OUTER, tableSize);
+		printDoubleBorder(Border.HORIZONTAL_INNER, Border.HORIZONTAL_OUTER, tableSize);
 	}
 	//-->>
 	public void printRow(String[] values) {
 		println();
 		
-		printf("%s%-6s", FormatConfig.VERTICAL_OUTER.label(), values[0]);
+		printf("%s%-6s", Border.VERTICAL_OUTER.style(), values[0]);
 		
 		for(int i=1; i<values.length;i++)
-			 printf("%s%-6s", FormatConfig.VERTICAL_INNER.label(), values[i]);
+			 printf("%s%-6s", Border.VERTICAL_INNER.style(), values[i]);
 		
-		printf("%s", FormatConfig.VERTICAL_OUTER.label());
+		printf("%s", Border.VERTICAL_OUTER.style());
 	}
 	
 	//-->>
@@ -189,8 +189,8 @@ public class ConsoleUI{
 	}
 	
 	//-->>
-	private void printDoubleBorder(FormatConfig styleA, FormatConfig styleB, int length) {
-		printf("%n%s%n%s", styleA.label().repeat(length), styleB.label().repeat(length));
+	private void printDoubleBorder(Border styleA, Border styleB, int length) {
+		printf("%n%s%n%s", styleA.style().repeat(length), styleB.style().repeat(length));
 	}
 	
 	//-->>

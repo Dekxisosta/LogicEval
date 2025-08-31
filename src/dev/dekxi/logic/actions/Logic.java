@@ -1,5 +1,8 @@
 package dev.dekxi.logic.actions;
 
+/**
+ *
+ */
 class Logic{
 	/*=================
 	 * UNARY PACKAGE-PRIVATE FUNCTIONS

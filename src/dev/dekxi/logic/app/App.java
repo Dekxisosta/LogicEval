@@ -63,9 +63,13 @@ public class App{
 	 *=========================*/
 	/**
 	 * Serves as the orchestrator of all public classes in all 
-	 * packages under dev.dekxi.logic for the program execution
-     *
+	 * packages under dev.dekxi.logic for the program execution <p></p>
      * @throws IOException invalid object detected using readLine in console input
+     *
+     * <p><b>DEPENDENCIES</b></p>
+     * <ul>
+     *     <li></li>
+     * </ul>
 	 */
 	private void run() throws IOException{
         //instantiate dependencies for program use

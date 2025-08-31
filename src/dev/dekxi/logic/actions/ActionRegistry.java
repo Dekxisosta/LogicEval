@@ -3,6 +3,9 @@ package dev.dekxi.logic.actions;
 import dev.dekxi.logic.model.ActionMap;
 import dev.dekxi.logic.model.Action;
 
+/**
+ * Registers all actions to an Action Map
+ */
 public class ActionRegistry{
 	private ActionHandler handler = new ActionHandler();
 	public ActionMap map = new ActionMap();

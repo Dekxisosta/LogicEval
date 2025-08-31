@@ -1,5 +1,14 @@
 package dev.dekxi.logic.model;
 
+
+/*===============================
+ * ACTION MODEL / OBJECT
+ *===============================*/
+/**
+ * Object that has a corresponding name to its runnable function.
+ * This is later mapped using the {@link ActionMap} object inside
+ * the {@link dev.dekxi.logic.actions} package
+ */
 public final class Action{
 	/*=================
 	 * INSTANCE FIELDS
@@ -11,26 +20,22 @@ public final class Action{
 	private Runnable operation;
 	
 	/*=================
-	 * CONSTRUCTOR
+	 * EXPOSED API / PUBLIC METHODS
 	 * =============*/
-    /** Public constructor for later instantiation*/
+    /**
+     * Public constructor for later instantiation
+     * @param name the name of the action
+     * @param operation the operation performed by the runnable
+     *      associated with the action object
+     */
 	public Action(String name, Runnable operation){
 		this.name = name;
 		this.operation = operation;
 	}
-	
-	/*=================
-	 * ACCESSORS AND MUTATORS
-	 * =============*/
-    /**
-     * Getter method for action name
-     *
-     * @return  {@link name} for console rendering
-     */
+
+    /** @return name for console rendering*/
 	public String getName() {return name;}
 	
-	/*=================
-	 * RUN
-	 * =============*/
+    /** Runs the runnable associated with the action object */
 	public void run() {operation.run();};
 }

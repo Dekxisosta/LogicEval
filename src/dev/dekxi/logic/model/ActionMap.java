@@ -4,11 +4,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*===============================
- * ACTION MAP MODEL
+ * ACTION MAP MODEL / OBJECT
  *===============================*/
 /**
  * A map that uses integers as indices and {@link Action} objects
- * as program operations.
+ * as program operations
+ *
+ * <p><b>DEPENDENCIES</b></p>
+ * <ul>
+ *     <li> {@link java.util.HashMap} used for easier navigation by
+ *         assigning key-value pairs </li>
+ *     <li> {@link java.util.Map} to access subtype Hashmap </li>
+ * </ul>
  */
 public final class ActionMap {
     /*===============================
@@ -37,16 +44,14 @@ public final class ActionMap {
     }
 
     /**
-     * Returns the held action of the given key
-     *
+     * Returns the held action of the given key <p></p>
      * @param num the index used for navigating
      * @return {@link Action} the action performed
      */
     public Action get(int num) {return actionMap.get(num);}
 
     /**
-     * Returns all the available action names in actionMap
-     *
+     * Returns all the available action names in actionMap <p></p>
      * @return names
      */
     public String[] getActionNames() {
@@ -60,8 +65,7 @@ public final class ActionMap {
     }
 
     /**
-     * Runs the Runnable method of the action inside actionMap
-     *
+     * Runs the Runnable method of the action inside actionMap <p></p>
      * @param choice the index of the action to be performed
      */
     public void perform(int choice) {get(choice).run();}
