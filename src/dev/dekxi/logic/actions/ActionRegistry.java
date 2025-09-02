@@ -3,12 +3,18 @@ package dev.dekxi.logic.actions;
 import dev.dekxi.logic.model.ActionMap;
 import dev.dekxi.logic.model.Action;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Registers all actions to an Action Map
  */
 public class ActionRegistry{
 	private ActionHandler handler = new ActionHandler();
-	public ActionMap map = new ActionMap();
+    private ActionMap map;
+    public ActionRegistry() {
+        this.map = new ActionMap(new HashMap<>());
+    }
 	/*=================
 	 * REGISTERING OF ACTIONS
 	 * =============*/
@@ -74,7 +80,9 @@ public class ActionRegistry{
 		//0 is a special placeholder for program exist
 		putAction(0, handler.promptProgramTermination());
 	}
-	
+    public ActionMap getMap(){
+        return map;
+    }
 	private void putAction(int num, Action action) {
 		map.put(num, action);
 	}

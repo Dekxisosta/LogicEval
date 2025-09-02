@@ -22,10 +22,12 @@ public final class ActionMap {
      * INSTANCE FIELDS
      *===============================*/
     /** Map used to store indexed actions for easier navigation*/
-    private final Map<Integer, Action> actionMap = new HashMap<>();
+    private final Map<Integer, Action> actionMap;
 
     /** Public constructor for instantiation */
-    public ActionMap() {}
+    public ActionMap(Map<Integer, Action> actionMap) {
+        this.actionMap = actionMap;
+    }
 
     /*===============================
      * EXPOSED API / PUBLIC METHODS

@@ -28,9 +28,15 @@ public class Data{
     /** Getter method of the singleton instance  */
 	public static Data getInstance() {return INSTANCE;}
 
+    /** Getter method of Truth Value P */
 	public TruthValue getP() {return p;}
+
+    /** Getter method of Truth Value Q*/
 	public TruthValue getQ() {return q;}
-	
+
+    /** Setter method of Truth Value P */
 	public void setP(boolean p) {this.p.setValue(p);}
+
+    /** Setter method of Truth Value Q */
 	public void setQ(boolean q) {this.q.setValue(q);}
 }

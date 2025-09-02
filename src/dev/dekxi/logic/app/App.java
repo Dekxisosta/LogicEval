@@ -73,19 +73,19 @@ public class App{
 	 */
 	private void run() throws IOException{
         //instantiate dependencies for program use
-        ActionMap map = new ActionMap();
-        ActionRegistry actions = new ActionRegistry();
+        ActionRegistry registry = new ActionRegistry();
         Config config = Config.getInstance();
         ConsoleUI ui = new ConsoleUI();
+        ActionMap map = registry.getMap();
 
         //initializes ActionMap instance
-        actions.registerActions();
+        registry.registerActions();
 
         ui.showIntroduction();
 		
         //gets action names for later use in the program
         String[] actionNames = map.getActionNames();
-		
+
         //caches size for program efficiency while loop structure runs
         int numActions = actionNames.length;
 		

@@ -3,7 +3,6 @@ package dev.dekxi.logic.ui;
 import java.io.IOException;
 
 import dev.dekxi.logic.input.ConsoleInput;
-import dev.dekxi.logic.input.FileParser;
 
 public class ConsoleUI{
 	ConsoleInput input = new ConsoleInput();
@@ -19,12 +18,7 @@ public class ConsoleUI{
 	 * =============*/
 	//-->>
 	public void showIntroduction() {
-		System.out.print(FileParser.parseFile("resources/Introduction.txt"));
-	}
-	
-	//-->>
-	public void show() {
-		System.out.print(FileParser.parseFile("resources/Introduction.txt"));
+		System.out.print(input.getStringFromFilePath("resources/Introduction.txt"));
 	}
 	
 	//-->>

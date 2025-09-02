@@ -56,7 +56,7 @@ public final class ConsoleInput{
 	}
 
     /**
-     * Gets user choice from a set range of integer values
+     * Gets text from a file for console output
      * @param filePath the directory of the file in String value
      * @return the files text as a String value with line breaks
      * @throws IllegalArgumentException thrown when {@link FileParser} detects an invalid file path
